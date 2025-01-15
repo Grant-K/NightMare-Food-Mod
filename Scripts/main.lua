@@ -13,5 +13,27 @@ local function loadMod()
 	require 'modules/InfiniteDriveThruPatience'
 
 end
+local isModRunning = false
+--print (isModRunning) Used for Debguing
+LoopAsync(5000, function()
+	-- print("Looping") Used for Debuging
+    if isModRunning == true then
+        return
+    end
 
-loadMod()
+	local WorldLoaded = FindFirstOf('BP_BakeryGameState_Ingame_C')
+
+    if WorldLoaded == nil then
+           loadMod()
+		   print("Loading Mod")
+		   return
+    end
+	
+	local WorldAlreadyOn = WorldLoaded:GetPropertyValue('bIsRestaurantRunning')
+    if WorldAlreadyOn ~= false then
+        return
+    end
+
+	loadMod()
+    isModRunning = true
+end)
