@@ -8,10 +8,12 @@ return {
 		FastWalkSpeed = false,
 		WasteOilSizeInc = false,
 		IncreaseConBottleSize = false,
+		UpdatePatience = true,
 	},
 	SpeedSettings = {
 		DriveSpawnSpeed = 60.0, -- Lower is Faster this represents the delay (Default is 60)
 		WalkSpeed = 300.0, -- Default is 200
+		DrivePatience = 1, -- Default is 2 Lower means longer patience
 	},
 	SizeModifiers = {
 		WasteOilCanSize = 1.0, -- Default is 0.5
