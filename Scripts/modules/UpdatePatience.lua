@@ -3,7 +3,7 @@ local config = require("config")
 
 if config.ModsEnabled.UpdatePatience then
     local function PatienceUpdate(context)
-        return 1
+        return Config.SpeedSettings.DrivePatience
     end
     RegisterHook('/Game/Blueprints/Gameplay/DriveThru/BP_DriveThruCar.BP_DriveThruCar_C:UpdatePatience', PatienceUpdate)
 end

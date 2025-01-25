@@ -11,6 +11,9 @@ local function loadMod()
 	require 'modules/FastDriveThruSpawning'
 	require 'modules/IncreasedAiWalkSpeed'
 	require 'modules/InfiniteDriveThruPatience'
+	require 'modules/CondimentBottleSize'
+	require 'modules/CoffeeAndMilk'
+	require 'modules/IncreasedAiWalkSpeed'
 
 end
 local isModRunning = false
