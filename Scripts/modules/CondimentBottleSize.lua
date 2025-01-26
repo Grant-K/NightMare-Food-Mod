@@ -28,7 +28,7 @@ local function ChangeSize()
 		print("CondID:", ConID)
 		local currentMaxSize = condiment:GetPropertyValue("MaxSauceCount")
 		print("Old Max Size", currentMaxSize)
-		condiment:SetPropertyValue("MaxSauceCount", 30)
+		condiment:SetPropertyValue("MaxSauceCount", config.SizeModifiers.ConBottleSize)
 		currentMaxSize = condiment:GetPropertyValue("MaxSauceCount")
 		print("New Max Size", currentMaxSize)
 		
