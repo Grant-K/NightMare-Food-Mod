@@ -4,3 +4,4 @@ To Install I Highly Recommend you download the Dev Version of UE4SS https://gith
 The Dev varient will let your reload the mods
 I hope you enjoy my Mod thanks!
     -Red_Fog
+Video Tutorial: https://youtu.be/a0FX3VlybPc
