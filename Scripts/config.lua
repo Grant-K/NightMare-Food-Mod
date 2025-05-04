@@ -29,6 +29,6 @@ return {
 	--Debuging Options
 	debug = {
 		listEnabledModules = true, -- a debuging option to print all enabled modules
-		debuggingPrints = true, --Enables Print Functions used to debug.
+		debuggingPrints = false, --Enables Print Functions used to debug.
 	}
 }
